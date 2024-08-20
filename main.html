@@ -5,17 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Classes Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        /* Styling the first heading */
+        div h5 {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styling the second paragraph */
+        div p:nth-child(2) {
+            color: inherit;
+        }
+
+        /* Styling the third paragraph */
+        div p:last-child {
+            color: red;
+        }
+
+        /* Styling the list items */
+        ul li {
+            background-color: gray;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Apply white background to odd items */
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* First and last items font size */
+        ul li:first-child,
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        /* Third item specific background color */
+        ul li:nth-child(3) {
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <p>First paragraph</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-monte</p>
-        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu
-</p>
-        <p>Nam eget dui. Etiam rhoncus. Maecenas tempus tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel nunc</p>
+        <h5>First paragraph</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.</p>
+        <p>Nam eget dui. Etiam rhoncus. Maecenas tempus tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel nunc.</p>
     </div>
 
     <ul>
@@ -25,8 +67,6 @@ monte</p>
         <li>Fourth Item</li>
         <li>Fifth Item</li>
     </ul>
-
-    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
